@@ -4,6 +4,8 @@
 raw.county.data <- read.csv('./data/wa-county-data.csv', stringsAsFactors = FALSE)
 raw.voter.data <- read.csv('./data/wa-voter-turnout.csv', stringsAsFactors = FALSE)
 
+raw.county.data <- rename(raw.county.data, County.name = ï..County.name)
+
 # DATA WRANGLING: clean and join the data frames
 
 # County data: remove commas and percent signs from numeric columns
